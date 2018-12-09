@@ -893,46 +893,46 @@ void init (void)
 void change(void){
 
 	Image* image;
-	image = loadBMP("angrybirdsbg.bmp");
+	image = loadBMP("images/angrybirdsbg.bmp");
     
 	if(level == 0)
 	{
 	
-	image = loadBMP("game_over.bmp");
+	image = loadBMP("images/game_over.bmp");
 	}
 	
 	if(level == 1)
 	{
 	//image = loadBMP("angrybirdsbg.bmp");
 	
-	 image = loadBMP("SunsetBird.bmp");
+	 image = loadBMP("images/SunsetBird.bmp");
 	}
 	
     else if( level == 2)
 	{
-	image = loadBMP("house.bmp");
+	image = loadBMP("images/house.bmp");
 	
 	}
 
 	else if( level == 3)
 	{
-	image = loadBMP("angrybirdsbg.bmp");
+	image = loadBMP("images/angrybirdsbg.bmp");
 	
 	}
 
 	else if( level == 4)
 	{
-	image = loadBMP("Nature2.bmp");
+	image = loadBMP("images/Nature2.bmp");
 	
 	}
 
 	else if( level == 5){
-	image = loadBMP("_vector-dandelion-vector-preview-by-dragonart.bmp");
+	image = loadBMP("images/_vector-dandelion-vector-preview-by-dragonart.bmp");
 	}
 
 	else if(level == 6)
 	{
-	image = loadBMP("winner-win.bmp");
+	image = loadBMP("images/winner-win.bmp");
 	}
 	
 

@@ -55,21 +55,21 @@ void LoadGLTextures()
 	unsigned height;
 	glGenTextures(30, texture);	
 	
-	TextureImage = loadBMPRaw("mud.bmp" , width, height) ;	
+	TextureImage = loadBMPRaw("images/mud.bmp" , width, height) ;	
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[0]);
 		glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
-	TextureImage = loadBMPRaw("grass.bmp" , width, height , false) ;
+	TextureImage = loadBMPRaw("images/grass.bmp" , width, height , false) ;
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[1]);
 		glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
-	TextureImage = loadBMPRaw("wall3.bmp" , width, height , false) ;
+	TextureImage = loadBMPRaw("images/wall3.bmp" , width, height , false) ;
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[2]);
@@ -77,7 +77,7 @@ void LoadGLTextures()
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
 
-	TextureImage = loadBMPRaw("tin.bmp" , width, height , false) ;
+	TextureImage = loadBMPRaw("images/tin.bmp" , width, height , false) ;
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[3]);
@@ -85,7 +85,7 @@ void LoadGLTextures()
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
 
-	TextureImage = loadBMPRaw("door.bmp" , width, height , false);
+	TextureImage = loadBMPRaw("images/door.bmp" , width, height , false);
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[4]);
@@ -94,7 +94,7 @@ void LoadGLTextures()
 	}
 
 
-	TextureImage = loadBMPRaw("wood2.bmp" , width, height , false) ;
+	TextureImage = loadBMPRaw("images/wood2.bmp" , width, height , false) ;
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[5]);
@@ -102,7 +102,7 @@ void LoadGLTextures()
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
 
-	TextureImage = loadBMPRaw("marble.bmp" , width, height , false) ;
+	TextureImage = loadBMPRaw("images/marble.bmp" , width, height , false) ;
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[6]);
@@ -110,7 +110,7 @@ void LoadGLTextures()
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
 
-	TextureImage = loadBMPRaw("innerwal.bmp" , width, height , false);
+	TextureImage = loadBMPRaw("images/innerwal.bmp" , width, height , false);
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[7]);
@@ -120,14 +120,14 @@ void LoadGLTextures()
 		// glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
-	TextureImage = loadBMPRaw("outwin.bmp" , width, height , false);
+	TextureImage = loadBMPRaw("images/outwin.bmp" , width, height , false);
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[8]);
 		glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
-	TextureImage = loadBMPRaw("inwin.bmp" , width, height , false) ;
+	TextureImage = loadBMPRaw("images/inwin.bmp" , width, height , false) ;
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[9]);
@@ -136,7 +136,7 @@ void LoadGLTextures()
 	}
 
 
-	TextureImage = loadBMPRaw("bed-sheet-250x250.172174907_std.bmp" , width, height , false);
+	TextureImage = loadBMPRaw("images/bed-sheet-250x250.172174907_std.bmp" , width, height , false);
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[10]);
@@ -144,28 +144,28 @@ void LoadGLTextures()
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
 
-	TextureImage = loadBMPRaw("table.bmp" , width, height , false);
+	TextureImage = loadBMPRaw("images/table.bmp" , width, height , false);
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[11]);
 		glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
-	TextureImage = loadBMPRaw("15.bmp" , width, height , false);
+	TextureImage = loadBMPRaw("images/15.bmp" , width, height , false);
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[12]);
 		glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
-	TextureImage = loadBMPRaw("21.bmp" , width, height , false) ;
+	TextureImage = loadBMPRaw("images/21.bmp" , width, height , false) ;
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[13]);
 		glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
-	TextureImage = loadBMPRaw("Floral_Carpet_Texture_by_stocks_for_you.bmp" , width, height , false);
+	TextureImage = loadBMPRaw("images/Floral_Carpet_Texture_by_stocks_for_you.bmp" , width, height , false);
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[14]);
@@ -173,7 +173,7 @@ void LoadGLTextures()
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
 
-	TextureImage = loadBMPRaw("paint.bmp" , width, height , false);
+	TextureImage = loadBMPRaw("images/paint.bmp" , width, height , false);
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[15]);
@@ -181,7 +181,7 @@ void LoadGLTextures()
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
 
-	TextureImage = loadBMPRaw("p3.bmp" , width, height , false);
+	TextureImage = loadBMPRaw("images/p3.bmp" , width, height , false);
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[16]);
@@ -189,7 +189,7 @@ void LoadGLTextures()
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
 
-	TextureImage = loadBMPRaw("wood3.bmp" , width, height , false) ;
+	TextureImage = loadBMPRaw("images/wood3.bmp" , width, height , false) ;
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[17]);
@@ -197,14 +197,14 @@ void LoadGLTextures()
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
 	
-	TextureImage = loadBMPRaw("book1.bmp" , width, height , false) ;
+	TextureImage = loadBMPRaw("images/book1.bmp" , width, height , false) ;
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[18]);
 		glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
-	TextureImage = loadBMPRaw("book2.bmp" , width, height , false) ;
+	TextureImage = loadBMPRaw("images/book2.bmp" , width, height , false) ;
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[19]);
@@ -212,7 +212,7 @@ void LoadGLTextures()
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
 
-	TextureImage = loadBMPRaw("einstein2.bmp" , width, height , false);
+	TextureImage = loadBMPRaw("images/einstein2.bmp" , width, height , false);
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[20]);
@@ -220,7 +220,7 @@ void LoadGLTextures()
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
 							
-	TextureImage = loadBMPRaw("cab.bmp" , width, height , false) ;
+	TextureImage = loadBMPRaw("images/cab.bmp" , width, height , false) ;
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[21]);
@@ -228,7 +228,7 @@ void LoadGLTextures()
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
 
-	TextureImage = loadBMPRaw("paint_horse.bmp" , width, height , false);
+	TextureImage = loadBMPRaw("images/paint_horse.bmp" , width, height , false);
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[22]);
@@ -236,7 +236,7 @@ void LoadGLTextures()
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
 
-	TextureImage = loadBMPRaw("color1.bmp" , width, height , false);
+	TextureImage = loadBMPRaw("images/color1.bmp" , width, height , false);
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[23]);
@@ -245,14 +245,14 @@ void LoadGLTextures()
 	}
 
 
-	TextureImage = loadBMPRaw("p13.bmp" , width, height , false) ;
+	TextureImage = loadBMPRaw("images/p13.bmp" , width, height , false) ;
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[24]);
 		glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
 		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_BGR, GL_UNSIGNED_BYTE, TextureImage);
 	}
-	TextureImage = loadBMPRaw("ceiling6.bmp" , width, height , false) ;
+	TextureImage = loadBMPRaw("images/ceiling6.bmp" , width, height , false) ;
 	if ( TextureImage != NULL)
 	{
 		glBindTexture(GL_TEXTURE_2D, texture[25]);
